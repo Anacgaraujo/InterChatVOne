@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-interchat-staging-133759-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022417849214:role/amplify-interchat-staging-133759-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022417849214:role/amplify-interchat-staging-133759-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-interchat-staging-133759-deployment",
+      "UnauthRoleName": "amplify-interchat-staging-133759-unauthRole",
+      "StackName": "amplify-interchat-staging-133759",
+      "StackId": "arn:aws:cloudformation:us-east-1:022417849214:stack/amplify-interchat-staging-133759/a45c5ac0-abcf-11ee-980d-0a8023b18f07",
+      "AmplifyAppId": "d2cr8vhd7ap06v"
+    },
+    "categories": {
+      "auth": {
+        "InterChat": {}
+      }
+    }
+  }
+}

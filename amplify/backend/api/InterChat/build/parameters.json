@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "InterChat",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-interchat-staging-133759-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/679d6eca9bf91c7e734254013b68973d109200c5"
+}

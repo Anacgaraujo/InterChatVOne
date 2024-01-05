@@ -1,0 +1,90 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-interchat-staging-133759-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022417849214:role/amplify-interchat-staging-133759-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022417849214:role/amplify-interchat-staging-133759-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-interchat-staging-133759-deployment",
+      "UnauthRoleName": "amplify-interchat-staging-133759-unauthRole",
+      "StackName": "amplify-interchat-staging-133759",
+      "StackId": "arn:aws:cloudformation:us-east-1:022417849214:stack/amplify-interchat-staging-133759/a45c5ac0-abcf-11ee-980d-0a8023b18f07",
+      "AmplifyAppId": "d2cr8vhd7ap06v"
+    }
+  },
+  "auth": {
+    "InterChat": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS"
+          ]
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-1_0qxVHHLCv",
+        "AppClientIDWeb": "5vaebvarv6tc09u0kos8dc7hc7",
+        "AppClientID": "7n1co6l3hpi1sokrhqfp301pr",
+        "IdentityPoolId": "us-east-1:afa0eb61-d907-4fa9-a792-ff8d539ef666",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:022417849214:userpool/us-east-1_0qxVHHLCv",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "InterChat"
+      },
+      "lastPushTimeStamp": "2024-01-05T15:00:53.233Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-interchat-staging-133759-deployment/amplify-cfn-templates/auth/InterChat-cloudformation-template.json",
+        "logicalId": "authInterChat"
+      }
+    }
+  },
+  "api": {
+    "InterChat": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "5mmzhgpmgvaonl3hwzf23pirdi",
+        "GraphQLAPIEndpointOutput": "https://afxbkizouvezdajtp7gu2s2sxm.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-xw3rdd5pnzbcnajyjqynhewoea"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-interchat-staging-133759-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiInterChat"
+      },
+      "lastPushTimeStamp": "2024-01-05T15:00:53.238Z",
+      "lastPushDirHash": "PyvgmkEZg6cWTl+LMyzVa+li6j4="
+    }
+  }
+}
